@@ -3,8 +3,13 @@
  */
 package commission;
 
+import commission.service.Commission;
+
 public class Library {
     public boolean someLibraryMethod() {
+        Commission commission = new Commission.Builder()
+                .build();
+        System.out.println(commission.getSize());
         return true;
     }
 }
